@@ -1,1 +1,6 @@
-github "cityos/CoreCityOS" "74ecded628042568d06ed514018638131db25373"
+github "Alamofire/Alamofire" "3.1.5"
+github "cityos/CoreCityOS" "9fe6ce80b913e30dc2627b4ed4b691bf283a83d0"
+github "mxcl/OMGHTTPURLRQ" "3.1.1"
+github "tidwall/SwiftWebSocket" "2.5.0"
+github "mxcl/PromiseKit" "37d5685ab427bd27f8d3d7322bf8dd51ebb44ea6"
+github "appsmonkey/flowthings" "v0.5.1"

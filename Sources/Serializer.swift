@@ -6,4 +6,12 @@
 //  Copyright © 2016 CityOS. All rights reserved.
 //
 
-import Foundation
+import CoreCityOS
+import Flowthings
+
+class Serializer {
+    
+    func serializeLiveData(jsonData json: JSON) throws -> [LiveDataCollectionType] {
+        return [BenchDataCollection()]
+    }
+}

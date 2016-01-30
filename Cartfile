@@ -1,1 +1,5 @@
+# CoreCityOS framework
 github "cityos/CoreCityOS" "master"
+
+# Flowthings framework
+github "appsmonkey/flowthings" ~> 0.5.1

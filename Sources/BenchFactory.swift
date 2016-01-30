@@ -13,4 +13,8 @@ public final class BenchFactory: FactoryType {
     public static let sharedInstance = BenchFactory()
     
     public init() {}
+    
+    public func getLatestData(completion:(data: [LiveDataCollectionType], error: ErrorType) -> ()) {
+    
+    }
 }
