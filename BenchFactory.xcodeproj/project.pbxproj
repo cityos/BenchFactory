@@ -14,6 +14,7 @@
 		51487A011C5D04BF00F73991 /* Flowthings.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 514879FD1C5D04BF00F73991 /* Flowthings.framework */; };
 		51487A021C5D04BF00F73991 /* PromiseKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 514879FE1C5D04BF00F73991 /* PromiseKit.framework */; };
 		51487A031C5D04BF00F73991 /* SwiftWebSocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 514879FF1C5D04BF00F73991 /* SwiftWebSocket.framework */; };
+		51CF67C41C6A926000829D31 /* BenchZone.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51CF67C31C6A926000829D31 /* BenchZone.swift */; };
 		51F780CD1C5A5C7100F0C43E /* BenchFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 51F780C91C5A5C5300F0C43E /* BenchFactory.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		51F780CF1C5A5CE400F0C43E /* CoreCityOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51F780CE1C5A5CE400F0C43E /* CoreCityOS.framework */; };
 		51F780D11C5A5D0600F0C43E /* Bench.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F780D01C5A5D0600F0C43E /* Bench.swift */; };
@@ -27,6 +28,7 @@
 		514879FD1C5D04BF00F73991 /* Flowthings.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Flowthings.framework; path = Carthage/Build/iOS/Flowthings.framework; sourceTree = "<group>"; };
 		514879FE1C5D04BF00F73991 /* PromiseKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PromiseKit.framework; path = Carthage/Build/iOS/PromiseKit.framework; sourceTree = "<group>"; };
 		514879FF1C5D04BF00F73991 /* SwiftWebSocket.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftWebSocket.framework; path = Carthage/Build/iOS/SwiftWebSocket.framework; sourceTree = "<group>"; };
+		51CF67C31C6A926000829D31 /* BenchZone.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BenchZone.swift; sourceTree = "<group>"; };
 		51F780BD1C5A5C3500F0C43E /* BenchFactory.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BenchFactory.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		51F780C91C5A5C5300F0C43E /* BenchFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BenchFactory.h; path = Sources/BenchFactory.h; sourceTree = "<group>"; };
 		51F780CA1C5A5C5300F0C43E /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Sources/Info.plist; sourceTree = "<group>"; };
@@ -95,6 +97,7 @@
 				51F780D01C5A5D0600F0C43E /* Bench.swift */,
 				511A5E6C1C5A6556002C0009 /* BenchDataCollection.swift */,
 				514879F91C5D00D200F73991 /* BenchFactory.swift */,
+				51CF67C31C6A926000829D31 /* BenchZone.swift */,
 				514879F71C5D00C300F73991 /* Serializer.swift */,
 			);
 			path = Sources;
@@ -181,6 +184,7 @@
 				511A5E6D1C5A6556002C0009 /* BenchDataCollection.swift in Sources */,
 				514879FA1C5D00D200F73991 /* BenchFactory.swift in Sources */,
 				514879F81C5D00C300F73991 /* Serializer.swift in Sources */,
+				51CF67C41C6A926000829D31 /* BenchZone.swift in Sources */,
 				51F780D11C5A5D0600F0C43E /* Bench.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -24,7 +24,7 @@ public final class BenchFactory: FactoryType {
         )
     }()
     
-    public func getLatestData(completion:(data: [LiveDataCollectionType]?, error: ErrorType?) -> ()) {
+    public func getLatestData(completion: (data: [LiveDataCollectionType]?, error: ErrorType?) -> ()) {
         
         let findParams = FindParams()
         

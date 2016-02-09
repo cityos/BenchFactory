@@ -22,6 +22,7 @@ public class BenchDataCollection: LiveDataCollectionType {
     
     public var deviceData = DeviceData(deviceID: "empty")
     public var creationDate = NSDate()
+    public var allReadings = [LiveDataType]()
     
     //MARK: Define data types
     
@@ -76,8 +77,8 @@ public class BenchDataCollection: LiveDataCollectionType {
     public var usedEnergy: LiveDataType {
         return LiveData(
             dataType: .UsedEnergy,
-            jsonKey: "used", unitNotation:
-            "Mhw"
+            jsonKey: "used",
+            unitNotation: "Mhw"
         )
     }
     
@@ -88,8 +89,6 @@ public class BenchDataCollection: LiveDataCollectionType {
             unitNotation: "db"
         )
     }
-    
-    public var allReadings = [LiveDataType]()
     
     //MARK: Init methods
     
