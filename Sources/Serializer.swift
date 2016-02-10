@@ -16,7 +16,7 @@ class Serializer {
         
         var dataCollection = [LiveDataCollectionType]()
         
-        if let array = json.array {
+        if let array = json["body"].array {
             let range = 0..<array.count
             
             for i in range {
@@ -38,5 +38,18 @@ class Serializer {
         }
         
         return dataCollection
+    }
+    
+    class func serializeZoneData(jsonData json: JSON) throws -> [ZoneType] {
+        var zones = [ZoneType]()
+        
+        if let array = json["body"].array {
+            let range = 0..<array.count
+            
+            for i in range {
+                // Serialize json datas
+            }
+        }
+        return zones
     }
 }

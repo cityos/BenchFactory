@@ -24,11 +24,16 @@ public final class BenchFactory: FactoryType {
         )
     }()
     
-    public func getLatestData(completion: (data: [LiveDataCollectionType]?, error: ErrorType?) -> ()) {
+    static let inDataFlow = "123123123"
+    static let zonesDataFlow = "123123123"
+    
+    /// Retrieve latest data
+    public func retrieveLatestBenchData(
+        completion: (data: [LiveDataCollectionType]?, error: ErrorType?) -> ()) {
         
         let findParams = FindParams()
         
-        self.api.drop.find("f562e8c4f68056d244d594ce6", findParams: findParams)
+        api.drop.find("f562e8c4f68056d244d594ce6", findParams: findParams)
             .then {
                 body -> () in
                 do {
@@ -41,5 +46,29 @@ public final class BenchFactory: FactoryType {
                 error in
                 completion(data: nil, error: error)
         }
+    }
+    
+    /// Retrieve all zones
+    public func retrieveZones(completion: (data: [ZoneType]?, error: ErrorType?) -> ()) {
+        
+        let findParams = FindParams()
+        
+        api.drop.find(BenchFactory.zonesDataFlow, findParams: findParams)
+            .then {
+                body -> () in
+                do {
+                    let zoneData = try Serializer.serializeZoneData(jsonData: body)
+                    completion(data: zoneData, error: nil)
+                }
+            }.error {
+                error in
+                completion(data: nil, error: error)
+        }
+    }
+    
+    /// Retrieves data for specific bench device ID
+    public func retrieveDataForBench(benchID id: String,
+        completion: (data: [LiveDataCollectionType]?, error: ErrorType?) -> ()) {
+        
     }
 }
