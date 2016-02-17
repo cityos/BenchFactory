@@ -24,7 +24,7 @@ public final class BenchFactory: FactoryType {
         )
     }()
     
-    static let inDataFlow = "123123123"
+    static let inDataFlow = "f56c44c4068056d7a7d40698d"
     static let zonesDataFlow = "123123123"
     
     /// Retrieve latest data
@@ -33,7 +33,7 @@ public final class BenchFactory: FactoryType {
         
         let findParams = FindParams()
         
-        api.drop.find("f562e8c4f68056d244d594ce6", findParams: findParams)
+        api.drop.find(BenchFactory.inDataFlow, findParams: findParams)
             .then {
                 body -> () in
                 do {
